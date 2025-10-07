@@ -46,31 +46,31 @@
 # Вердикт: Вы неплохо считаете
 
 # import random
-from random import randint, choice
-operators = ['+', '-']
-# random - случайный
-# int - integer - целое число
-num = 0
-for i in range(1, 6):
-    a = randint(10, 999)
-    b = randint(10, 999)
-    op = choice(operators)
-
-    c = int(input(f"{i}. {a} + {b} = "))
-    if c == a + b:
-        print("Правильно!")
-        num+=1
-    else:
-        print("Неправильно")
-print(f"Вы набрали {num} балов")
-if num <= 1:
-    print("Вердикт:Вы плохо считаете")
-elif num <= 3:
-    print("Вердикт: Вы неплохо считаете")
-elif num == 4:
-    print("Вердикт: Вы хорошо считаете")
-elif num == 5:
-    print("Вердикт: Вы отлично считаете")
+# from random import randint, choice
+# operators = ['+', '-']
+# # random - случайный
+# # int - integer - целое число
+# num = 0
+# for i in range(1, 6):
+#     a = randint(10, 999)
+#     b = randint(10, 999)
+#     op = choice(operators)
+#
+#     c = int(input(f"{i}. {a} + {b} = "))
+#     if c == a + b:
+#         print("Правильно!")
+#         num+=1
+#     else:
+#         print("Неправильно")
+# print(f"Вы набрали {num} балов")
+# if num <= 1:
+#     print("Вердикт:Вы плохо считаете")
+# elif num <= 3:
+#     print("Вердикт: Вы неплохо считаете")
+# elif num == 4:
+#     print("Вердикт: Вы хорошо считаете")
+# elif num == 5:
+#     print("Вердикт: Вы отлично считаете")
 
 # operators = ['+', '-']
 # op = choice(operators)
@@ -84,8 +84,50 @@ elif num == 5:
 # res = a + b if op == '+' else a - b
 
 
-
 # choice - выбор
 
 
-
+# from random import randint, choice
+#
+# operators = ['+', '-']
+# num = 0
+# for i in range(1, 6):
+#     a = randint(10, 999)
+#     b = randint(10, 999)
+#     op = choice(operators)
+#     c = int(input(f"{i}. {a} {op} {b} = "))
+#     if op == '+':
+#         if c == a + b:
+#             print("Правильно!")
+#             num += 1
+#         else:
+#             print("Неправильно")
+#             num += 1
+#     if op == '-':
+#         if c == a - b:
+#             print("Правильно")
+#             num += 1
+#         else:
+#             print("Неправильно")
+# print(f"Вы набрали {num} балов")
+# if num <= 1:
+#     print("Вердикт:Вы плохо считаете")
+# elif num <= 3:
+#     print("Вердикт: Вы неплохо считаете")
+# elif num == 4:
+#     print("Вердикт: Вы хорошо считаете")
+# elif num == 5:
+#     print("Вердикт: Вы отлично считаете")
+# a = randint(10, 999)
+#     b = randint(10, 999)
+#     op = choice(operators)
+#     c = int(input(f"{i}. {a} {op} {b} = "))
+# op = '+'
+# if op == '+' and c == a + b:
+#     print("Правильно!")
+#     num += 1
+# elif op == '-' and c == a - b:
+#     print("Правильно")
+#     num += 1
+# else:
+#     print('Неправильно')
